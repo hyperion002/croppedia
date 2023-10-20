@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    app:layoutDescription="@xml/fragment_details_scene">
+
+    <ImageView
+        android:id="@+id/imageview_crop_image"
+        android:layout_width="0dp"
+        android:layout_height="580dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/cotton_preview" />
+
+    <TextView
+        android:id="@+id/textview_crop_name"
+        style="?attr/textAppearanceHeadlineLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/imageview_crop_image"
+        app:layout_constraintTop_toBottomOf="@+id/imageview_crop_image"
+        tools:text="Cotton" />
+
+    <TextView
+        android:id="@+id/textview_crop_type"
+        style="?attr/textAppearanceLabelLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/textview_crop_name"
+        app:layout_constraintTop_toBottomOf="@+id/textview_crop_name"
+        tools:text="Cash" />
+
+    <TextView
+        android:id="@+id/textview_crop_about"
+        style="?attr/textAppearanceBodyMedium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_crop_type"
+        tools:text="@string/about" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="@id/textview_crop_about"
+        app:layout_constraintStart_toStartOf="@id/textview_crop_about"
+        app:layout_constraintTop_toBottomOf="@+id/textview_crop_about" />
+
+    <TextView
+        android:id="@+id/textview_crop_season"
+        style="?attr/textAppearanceTitleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/textview_crop_about"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        tools:text="Kharif" />
+
+    <TextView
+        android:id="@+id/textview_crop_climate_requirements"
+        style="?attr/textAppearanceBodySmall"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/textview_crop_about"
+        app:layout_constraintStart_toStartOf="@+id/textview_crop_season"
+        app:layout_constraintTop_toBottomOf="@+id/textview_crop_season"
+        tools:text="@string/climate_requirements" />
+</androidx.constraintlayout.motion.widget.MotionLayout>

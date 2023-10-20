@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Croppedia</string>
+
+    <string name="climate_requirements">
+        <li>Cotton is a tropical or sub-tropical crop grown in semi-arid areas of the country (mainly in the Deccan Plateau).</li>\n
+        <li>A hard frost is injurious to cotton cultivation and it requires at least 210 frost-free days.</li>\n
+        <li>Only light rainfall (50 to 100 cm) is preferred. Cotton can also be cultivated under irrigated conditions.</li>\n
+        <li>It requires high temperature and bright sunshine for its growth. Cotton requires a clear sky during the flowering stage.</li>
+    </string>
+    <string name="about">"India has the distinction of having the largest area under cotton cultivation which is about 37% of the world’s area under cotton cultivation. Cotton is one of the most important fibers and cash crops of India and plays a the dominant role in the industrial and agricultural economy of the country.\n""In India, there are ten major cotton-growing states which are divided into three zones, viz. north zone, central zone, and south zone. The North zone consists of Punjab, Haryana, and Rajasthan. The central zone includes Madhya Pradesh, Maharashtra, and Gujarat. The South zone comprises Andhra Pradesh, Telangana, Karnataka, and Tamil Nadu."</string>
+</resources>

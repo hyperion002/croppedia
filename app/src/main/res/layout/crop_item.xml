@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/materialcardview_hashira"
+    style="?attr/materialCardViewElevatedStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageview_crop"
+            android:layout_width="0dp"
+            android:layout_height="400dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearance="?attr/shapeAppearanceCornerSmall"
+            tools:srcCompat="@drawable/cotton_preview" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/overlay_gradient"
+            app:layout_constraintBottom_toBottomOf="@id/imageview_crop"
+            app:layout_constraintEnd_toEndOf="@id/imageview_crop"
+            app:layout_constraintStart_toStartOf="@id/imageview_crop"
+            app:layout_constraintTop_toTopOf="@id/imageview_crop" />
+
+        <TextView
+            android:id="@+id/textview_name"
+            style="?attr/textAppearanceHeadlineMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/material_dynamic_primary100"
+            app:layout_constraintBottom_toTopOf="@+id/textview_type"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Cotton" />
+
+        <TextView
+            android:id="@+id/textview_type"
+            style="?attr/textAppearanceBodyLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/material_dynamic_primary100"
+            app:layout_constraintBottom_toBottomOf="@id/imageview_crop"
+            app:layout_constraintStart_toStartOf="@+id/textview_name"
+            tools:text="Cash" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
